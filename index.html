@@ -8,26 +8,26 @@
 
     <h1>Agent Messaging test 2.0 </h1>
    
-    <script type='text/javascript'>
-        function initEmbeddedMessaging() {
-            try {
-                embeddedservice_bootstrap.settings.language = 'en_US'; // For example, enter 'en' or 'en-US'
-    
-                embeddedservice_bootstrap.init(
-                    '00DKj00000ZmLOP',
-                    'MessagingTest',
-                    'https://trailsignup-0c97ca9a11e81b.my.site.com/ESWMessagingTest1757992065217',
-                    {
-                        scrt2URL: 'https://trailsignup-0c97ca9a11e81b.my.salesforce-scrt.com'
-                    }
-                );
-            } catch (err) {
-                console.error('Error loading Embedded Messaging: ', err);
-            }
-        };
-    </script>
-    <script type='text/javascript' src='https://trailsignup-0c97ca9a11e81b.my.site.com/ESWMessagingTest1757992065217/assets/js/bootstrap.min.js' onload='initEmbeddedMessaging()'></script>
-    
+   <script type='text/javascript'>
+	function initEmbeddedMessaging() {
+		try {
+			embeddedservice_bootstrap.settings.language = 'en_US'; // For example, enter 'en' or 'en-US'
+
+			embeddedservice_bootstrap.init(
+				'00DKj00000ZmLOP',
+				'MessagingTest',
+				'https://trailsignup-0c97ca9a11e81b.my.site.com/ESWMessagingTest1757992065217',
+				{
+					scrt2URL: 'https://trailsignup-0c97ca9a11e81b.my.salesforce-scrt.com'
+				}
+			);
+		} catch (err) {
+			console.error('Error loading Embedded Messaging: ', err);
+		}
+	};
+</script>
+<script type='text/javascript' src='https://trailsignup-0c97ca9a11e81b.my.site.com/ESWMessagingTest1757992065217/assets/js/bootstrap.min.js' onload='initEmbeddedMessaging()'></script>
+
    
     
 
