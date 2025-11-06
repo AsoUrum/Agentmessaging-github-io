@@ -6,39 +6,9 @@
 </head>
 <Body>
 
-  <h1>Service Agent Messaging test 2.0 </h1>
-
-<form action="https://appy-ised-isde--cscua.sandbox.my.salesforce.com/servlet/servlet.WebToCase?encoding=UTF-8&orgId=00DAs00000qrvi9" method="POST">
-
-<input type=hidden name="orgid" value="00DAs00000qrvi9">
-<input type=hidden name="retURL" value="https://asourum.github.io/Agentmessaging-github-io/">
+  <h1>Web to Case Testing</h1>
 
 <!--  ----------------------------------------------------------------------  -->
-<!--  NOTE: These fields are optional debugging elements. Please uncomment    -->
-<!--  these lines if you wish to test in debug mode.                          -->
-<!--  <input type="hidden" name="debug" value=1>                              -->
-<!--  <input type="hidden" name="debugEmail" value="uaso@deloitte.ca">        -->
-<!--  ----------------------------------------------------------------------  -->
-
-<label for="name">Contact Name</label><input  id="name" maxlength="80" name="name" size="20" type="text" /><br>
-
-<label for="email">Email</label><input  id="email" maxlength="80" name="email" size="20" type="text" /><br>
-
-<label for="phone">Phone</label><input  id="phone" maxlength="40" name="phone" size="20" type="text" /><br>
-
-<label for="subject">Subject</label><input  id="subject" maxlength="80" name="subject" size="20" type="text" /><br>
-
-<label for="description">Description</label><textarea name="description"></textarea><br>
-
-<input type="hidden"  id="external" name="external" value="1" /><br>
-
-<input type="submit" name="submit">
-
-</form>
-
-
-
-	<!--  ----------------------------------------------------------------------  -->
 <!--  NOTE: Please add the following <META> element to your page <HEAD>.      -->
 <!--  If necessary, please modify the charset parameter to specify the        -->
 <!--  character set of your HTML page.                                        -->
@@ -53,7 +23,7 @@
 <form action="https://appy-ised-isde--cscua.sandbox.my.salesforce.com/servlet/servlet.WebToCase?encoding=UTF-8&orgId=00DAs00000qrvi9" method="POST">
 
 <input type=hidden name="orgid" value="00DAs00000qrvi9">
-<input type=hidden name="retURL" value="http://">
+<input type=hidden name="retURL" value="https://asourum.github.io/Agentmessaging-github-io/">
 
 <!--  ----------------------------------------------------------------------  -->
 <!--  NOTE: These fields are optional debugging elements. Please uncomment    -->
@@ -62,15 +32,46 @@
 <!--  <input type="hidden" name="debugEmail" value="uaso@deloitte.ca">        -->
 <!--  ----------------------------------------------------------------------  -->
 
-<label for="name">Contact Name</label><input  id="name" maxlength="80" name="name" size="20" type="text" /><br>
+<label for="type">Type</label><select  id="type" name="type"><option value="">--None--</option><option value="PCT NER Application">PCT NER Application</option>
+<option value="General Enquiry">General Enquiry</option>
+<option value="Technical Problem">Technical Problem</option>
+<option value="OFM">OFM</option>
+</select><br>
 
-<label for="email">Email</label><input  id="email" maxlength="80" name="email" size="20" type="text" /><br>
+<label for="recordType">Case Record Type</label><select  id="recordType" name="recordType"><option value="">--None--</option><option value="012Mm000001OLr2">Advanced examination</option>
+<option value="012Mm000001OLqo">Agent appointment or revocation</option>
+<option value="012Mm000001OLqp">Amendment or response to a report</option>
+<option value="012Mm000001OLr8">Appointment of common representative</option>
+<option value="012Mm000001OLqq">Change of method of correspondence or change of address (postal or email)</option>
+<option value="012Mm000001OLqs">Common Service Request</option>
+<option value="012Mm000001OLqu">Correct applicant or inventor (name, identity, addition, removal)</option>
+<option value="012As000004yvab">CSC Support Case</option>
+<option value="012Mm000001OLqv">Early Public Inspection (Early Laid Open)</option>
+<option value="0125W0000004KwI">Initial NER Application</option>
+<option value="012Mm000001OLqx">Maintenance fees</option>
+<option value="012Mm000001OLr4">Priority modifications (add/restore, withdraw, correct, provide document copy)</option>
+<option value="012Mm000001OLqy">Protest / Prior Art</option>
+<option value="012Mm000001OLqr">Record applicant or patentee change of name</option>
+<option value="012Mm000001OLqz">Record a transfer</option>
+<option value="012Mm000001OLr0">Register a document</option>
+<option value="012Mm000001OLr1">Reinstatement of an abandoned application</option>
+<option value="012Mm000001OLqt">Request for continued examination (RCE)</option>
+<option value="012Mm000001OLr3">Request for examination (RE)</option>
+<option value="012Mm000001OLqw">Response to NOA/CNOA with final fee payment</option>
+<option value="012Mm000001OLr5">Small Entity Declaration</option>
+<option value="012As000004yXBh">Voicemail Enquiry</option>
+<option value="012Mm000001OLr6">Withdraw Patent Application</option>
+<option value="012Mm000001OLr7">Withdraw Report or Notice</option>
+</select><br>
 
-<label for="phone">Phone</label><input  id="phone" maxlength="40" name="phone" size="20" type="text" /><br>
-
-<label for="subject">Subject</label><input  id="subject" maxlength="80" name="subject" size="20" type="text" /><br>
-
-<label for="description">Description</label><textarea name="description"></textarea><br>
+Subject Matter:<select  id="00NAs00000EGJhl" name="00NAs00000EGJhl" title="Subject Matter"><option value="">--None--</option><option value="Trademarks">Trademarks</option>
+<option value="Patents">Patents</option>
+<option value="Copyrights">Copyrights</option>
+<option value="Industrial Designs">Industrial Designs</option>
+<option value="Integrated Circuit Topographies">Integrated Circuit Topographies</option>
+<option value="Finance">Finance</option>
+<option value="Other">Other</option>
+</select><br>
 
 <label for="status">Status</label><select  id="status" name="status"><option value="">--None--</option><option value="On Hold">On Hold</option>
 <option value="Escalated">Escalated</option>
@@ -86,6 +87,10 @@
 <option value="Pending Internal">Pending Internal</option>
 <option value="Pending External">Pending External</option>
 <option value="Re-opened">Re-opened</option>
+</select><br>
+
+Language:<select  id="00NAs00000DqedG" name="00NAs00000DqedG" title="Language"><option value="">--None--</option><option value="English">English</option>
+<option value="French">French</option>
 </select><br>
 
 <input type="hidden"  id="external" name="external" value="1" /><br>
